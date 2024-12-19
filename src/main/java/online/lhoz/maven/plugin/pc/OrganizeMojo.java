@@ -81,7 +81,7 @@ public class OrganizeMojo extends AbstractMojo {
 		for (Dependency dependency : dependencies) {
 			if (dependency.getVersion() != null) {
 				// Create the property key
-				String propertyKey = "%s.%s".formatted(dependency.getGroupId(), dependency.getArtifactId());
+				String propertyKey = "%s.version".formatted(dependency.getArtifactId());
 
 				// Check if the property already exists
 				if (!properties.containsKey(propertyKey)) {
@@ -117,7 +117,7 @@ public class OrganizeMojo extends AbstractMojo {
 			model.getBuild().getPlugins().forEach(plugin -> {
 				if (plugin.getVersion() != null) {
 					// Create the property key
-					String propertyKey = "%s.%s".formatted(plugin.getGroupId(), plugin.getArtifactId());
+					String propertyKey = "%s.version".formatted(plugin.getArtifactId());
 
 					// Check if the property already exists
 					if (!properties.containsKey(propertyKey)) {
