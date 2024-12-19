@@ -81,11 +81,11 @@ After:
 <dependency>
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-core</artifactId>
-    <version>${org.apache.maven.maven-core}</version>
+    <version>${maven-core.version}</version>
 </dependency>
 
 <properties>
-    <org.apache.maven.maven-core>3.8.1</org.apache.maven.maven-core>
+    <maven-core.version>3.8.1</maven-core.version>
 </properties>
 ```
 
@@ -112,11 +112,11 @@ Before:
 <dependency>
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-core</artifactId>
-    <version>${org.apache.maven.maven-core}</version>
+    <version>${maven-core.version}</version>
 </dependency>
 
 <properties>
-    <org.apache.maven.maven-core>3.8.1</org.apache.maven.maven-core>
+    <maven-core.version>3.8.1</maven-core.version>
 </properties>
 ```
 
